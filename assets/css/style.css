@@ -9,12 +9,38 @@ img {
 }
 
 header {
-    background-image: url(../images/extra1-copyright-darren-bradley.jpg);
+    
     background-repeat: no-repeat;
     height: 50em;
     background-size: cover;
     background-position: center; 
 }  
+
+#index-header
+{
+    background-image: url(../images/extra1-copyright-darren-bradley.jpg);
+}
+
+#the-building-header
+{
+    background-image: url(../images/churchill-house-21.jpg);
+    height: 25em;
+    
+}
+
+#history-header
+{
+    background-image: url(../images/pond.jpg);
+    height: 25em;
+}
+
+#robin-boyd-header
+{
+    background-image: url(../images/churchill-house-4.jpg);
+    height: 25em;
+}
+
+
 
 header nav {
     text-align: center; 
@@ -23,10 +49,15 @@ header nav {
     background-color: black
 }
 
+
+
+
 header a {
     text-decoration: none;
     color: white;
 }
+
+
 
 header a:hover {
     text-decoration: underline;
@@ -39,6 +70,17 @@ header li {
     padding-right: 2em;
     font-family: 'Maven Pro', sans-serif; 
  
+}
+
+@media only screen and (max-width: 500px) {
+    header li {
+        display: inherit;
+        padding-bottom: 1em;
+    } 
+
+    header nav {
+        padding-top: 2em;
+    }
 }
 
 header h1 {
@@ -69,9 +111,7 @@ main p{
     text-align: center;
 }
 
-.container{
-    
-}
+
 
 .container1{
     top: 3em;
@@ -88,6 +128,12 @@ main p{
   padding: 1em 1em 1em 1em;
   font-family: 'Cormorant Garamond', serif;
 }
+
+@media only screen and (max-width: 500px) {
+    .container a{
+        font-size: 0.7em;
+    }
+    }
 
 .container1 img{
     padding-left: 10%;
@@ -203,6 +249,238 @@ footer h2{
     font-size: 0.7em;
     text-align: center;
 }
+
+.history-grid-container{
+    padding-top: 3em;
+    display: grid; 
+    grid-template-columns: repeat(6, auto); 
+    grid-template-rows: repeat(35, 50px); 
+    grid-column-gap: 3%;
+    grid-row-gap: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid-container {
+    padding-top: 3em;
+    display: grid; 
+    grid-template-columns: repeat(6, auto); 
+    grid-template-rows: repeat(60, 50px); 
+    grid-column-gap: 3%;
+    grid-row-gap: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.grid-heading{
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+
+.grid-item1 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 6;
+    
+    
+  }
+
+  .grid-item1 img {
+    object-fit: cover;
+    max-height: 100%;
+  }
+  
+  #grid-item2 { 
+    
+    grid-column-start: 3; 
+    grid-column-end: 6; 
+    grid-row-start: 1; 
+
+  }
+  .grid-item3 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 8; 
+    grid-row-end: 15; 
+    
+  }
+  .grid-item4 { 
+    
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 9; 
+     
+  }
+  .grid-item5 { 
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 18; 
+     
+  }
+  .grid-item6 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 18; 
+    
+  }
+  .grid-item7 { 
+    
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 23; 
+    
+  }
+  .grid-item8 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 26; 
+    
+  }
+
+  .grid-item9 { 
+    
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 31; 
+    
+  }
+  .boyd-grid-item1 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 1; 
+    grid-row-end: 6;
+    
+    
+  }
+
+  .boyd-grid-item1 img {
+    object-fit: cover;
+    max-height: 100%;
+  }
+  
+  .boyd-grid-item2 { 
+    
+    grid-column-start: 3; 
+    grid-column-end: 6; 
+    grid-row-start: 1; 
+
+  }
+  .boyd-grid-item3 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 8; 
+    grid-row-end: 15; 
+    
+  }
+  .boyd-grid-item4 { 
+    
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 8;
+    padding-top: 8%; 
+     
+  }
+  .boyd-grid-item5 { 
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 17; 
+     
+  }
+  .boyd-grid-item6 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 4; 
+    grid-row-start: 16; 
+    
+  }
+  .boyd-grid-item7 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 23; 
+    
+  }
+  .boyd-grid-item8 { 
+    
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 23; 
+    
+  }
+
+  .boyd-grid-item9 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 6; 
+    grid-row-start: 35; 
+    
+  }
+
+  .history-grid-item1 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 2; 
+    grid-row-end: 6;
+    
+    
+  }
+
+  .history-grid-item2 { 
+    
+    grid-column-start: 3; 
+    grid-column-end: 6; 
+    grid-row-start: 1; 
+
+  }
+  .history-grid-item3 { 
+    
+    grid-column-start: 1; 
+    grid-column-end: 3; 
+    grid-row-start: 11; 
+    padding-top: 8%;
+   
+    
+  }
+  .history-grid-item4 { 
+    
+    grid-column-start: 4; 
+    grid-column-end: 6; 
+    grid-row-start: 12;
+    padding-top: 8%; 
+     
+  }
+
+
+  
+
+   
+    
+    
+    
+      
+  
+
+  
+
+
+
+
+
+ 
+
+
 
 
 
