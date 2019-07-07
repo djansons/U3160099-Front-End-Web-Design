@@ -30,7 +30,7 @@ header {
 
 #history-header
 {
-    background-image: url(../images/pond.jpg);
+    background-image: url(../images/churchill-house-25.jpg);
     height: 25em;
 }
 
@@ -116,99 +116,7 @@ main p{
 
 
 
-.container1{
-    top: 3em;
-    position: relative;  
-}
 
-.container1 a{
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  top: 35%;
-  left: 35%;
-  background-color: #7B6538;
-  padding: 1em 1em 1em 1em;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-@media only screen and (max-width: 500px) {
-    .container a{
-        font-size: 0.7em;
-    }
-    }
-
-.container1 img{
-    padding-left: 10%;
-    width: 30%;
-}
-
-.container2{
-    top: 3em;
-    position: relative;  
-}
-
-.container2 a{
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  top: 50%;
-  left: 45%;
-  background-color: #7B6538;
-  padding: 1em 5em 1em 5em;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.container2 img{
-    padding-top: 5%;
-    width: 40%;
-    padding-left: 50%;
-    
-}
-
-.container3{
-    top: 9em;
-    position: relative;  
-}
-
-.container3 a{
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  top: 50%;
-  left: 45%;
-  background-color: #7B6538;
-  padding: 1em 5em 1em 5em;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.container3 img{
-    padding-top: 5%;
-    width: 40%;
-    padding-left: 10%;
-}
-
-.container4{
-    top: 9em;
-    position: relative;  
-}
-
-.container4 a{
-  position: absolute;
-  color: white;
-  text-decoration: none;
-  top: 50%;
-  left: 45%;
-  background-color: #7B6538;
-  padding: 1em 5em 1em 5em;
-  font-family: 'Cormorant Garamond', serif;
-}
-
-.container4 img{
-    padding-top: 5%;
-    width: 40%;
-    padding-left: 50%;
-}
 
 .footer-wrapper{
     margin-top: 200px;
@@ -262,6 +170,12 @@ footer h2{
     grid-template-rows: repeat(60, 50px); 
     align-items: center;
       
+}
+
+.index-grid-menu:hover{
+  outline: solid white;
+
+  text-decoration: underline;
 }
 
 
@@ -484,6 +398,8 @@ footer h2{
   font-family: 'Cormorant Garamond', serif;
 }
 
+/*Building Grid*/
+
 
 .building-grid-container {
     padding-top: 3em;
@@ -703,6 +619,7 @@ footer h2{
 
 
 /*Gallery Flexbox*/
+
   * {
     box-sizing: border-box;
   }
