@@ -16,6 +16,14 @@ header {
     background-position: center; 
 }  
 
+h3 {
+    color: #686864;
+    font-family: 'Maven Pro', sans-serif; 
+    padding-left: 0.4em;
+    font-size: 0.7em;
+  
+}
+
 /*Start of header Background Images*/
 
 #index-header
@@ -33,6 +41,12 @@ header {
 #history-header
 {
     background-image: url(../images/churchill-house-25.jpg);
+    height: 25em;
+}
+
+#gallery-header
+{
+    background-image: url(../images/churchill-house-13.jpg);
     height: 25em;
 }
 
@@ -379,18 +393,18 @@ footer h2{
   }
 
   .index-grid-item4{
-    grid-row-start: 35;
+    grid-row-start: 40;
   }
 
   .index-grid-item5{
-    grid-row-start: 35;
+    grid-row-start: 40;
   }
 
   .index-grid-item6{
-    grid-row-start: 41;
+    grid-row-start: 50;
   }
   .index-grid-item7{
-    grid-row-start: 41;
+    grid-row-start: 50;
   }
 }
 
@@ -540,7 +554,7 @@ footer h2{
   @media (max-width: 500px) {
 
     .boyd-grid-container {
-      grid-template-rows: repeat(100, 50px); 
+      grid-template-rows: repeat(110, 50px); 
 
 
       
@@ -606,7 +620,7 @@ footer h2{
   @media (max-width: 600px) {
 
     .history-grid-container{
-      grid-template-rows: repeat(55, 50px);
+      grid-template-rows: repeat(65, 50px);
     }
 
     .history-grid-items{
@@ -615,7 +629,7 @@ footer h2{
     }
 
     .history-grid-item2{
-      grid-row-start: 30;
+      grid-row-start: 37;
     }
   }
 
