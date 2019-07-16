@@ -24,6 +24,12 @@ h3 {
   
 }
 
+.content-ul{
+  list-style-type: circle;
+  list-style-position: inside;
+  
+}
+
 /*Start of header Background Images*/
 
 #index-header
@@ -427,8 +433,6 @@ footer h2{
     grid-template-columns: repeat(10, 10%); 
     grid-template-rows: repeat(50, 50px); 
     
-    
-  
 }
 
 .building-grid-item2 img {
@@ -462,7 +466,7 @@ footer h2{
 
     .building-grid-container{
       font-size: 15px;
-      grid-template-rows: repeat(60, 50px); 
+      grid-template-rows: repeat(50, 50px); 
       line-height: 1.7em;
     }
    
@@ -473,7 +477,7 @@ footer h2{
 
     .building-grid-container {
      
-      grid-template-rows: repeat(110, 50px); 
+      grid-template-rows: repeat(100, 50px); 
       align-items: stretch;    
   }
   
@@ -487,21 +491,11 @@ footer h2{
     .building-grid-item2 { 
       
       padding-top: 5em;
-      grid-row-start: 46; 
+      grid-row-start: 48; 
   }
 }
 
-  @media (max-width: 700px) {
-
-    .building-grid-container{
-      grid-template-rows: repeat(98, 50px); 
-    }
-
-    .building-grid-item2 { 
-     
-      grid-row-start: 48; 
-  }
-  }
+  
 
   /* Boyd Grid */
 
@@ -509,7 +503,7 @@ footer h2{
     padding-top: 3em;
     display: grid; 
     grid-template-columns: repeat(10, 10%); 
-    grid-template-rows: repeat(60, 50px); 
+    grid-template-rows: repeat(67, 50px); 
     
 }
 
@@ -543,7 +537,7 @@ footer h2{
   @media (max-width: 960px) {
 
     .boyd-grid-container {
-      grid-template-rows: repeat(83, 50px); 
+      grid-template-rows: repeat(65, 50px); 
       line-height: 1.7em;
       font-size: 15px;
 
@@ -551,10 +545,22 @@ footer h2{
   }
   }
 
+  @media (max-width: 665px) {
+
+    .boyd-grid-container {
+      grid-template-rows: repeat(88, 50px); 
+      line-height: 1.7em;
+      font-size: 15px;
+
+      
+  }
+
+  }
+
   @media (max-width: 500px) {
 
     .boyd-grid-container {
-      grid-template-rows: repeat(110, 50px); 
+      grid-template-rows: repeat(115, 50px); 
 
 
       
@@ -566,7 +572,7 @@ footer h2{
    }
 
    .boyd-grid-item2{
-     grid-row-start: 51;
+     grid-row-start: 56;
    }
   }
 
@@ -599,7 +605,7 @@ footer h2{
     
     grid-column-start: 6; 
     grid-column-end: 10; 
-    grid-row-start: 2; 
+    grid-row-start: 1; 
 
   }
 
@@ -620,7 +626,7 @@ footer h2{
   @media (max-width: 600px) {
 
     .history-grid-container{
-      grid-template-rows: repeat(65, 50px);
+      grid-template-rows: repeat(57, 50px);
     }
 
     .history-grid-items{
@@ -629,7 +635,7 @@ footer h2{
     }
 
     .history-grid-item2{
-      grid-row-start: 37;
+      grid-row-start: 29;
     }
   }
 
