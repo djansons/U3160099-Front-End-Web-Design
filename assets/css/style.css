@@ -1,6 +1,20 @@
+/*Global Properites*/
+
 body {
     background-color:#282827;
-    color: #ffffff;
+    color: white;
+    line-height: 2.0em;
+    font-family: 'Proza Libre', sans-serif;
+    text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 img { /*Make Images Responsive*/
@@ -14,11 +28,22 @@ header {
     height: 50em;
     background-size: cover;
     background-position: center; 
-}  
+    line-height: 1em;
+    
+} 
+
+h1{
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+}
+
+h3 h2 {
+  color: #686863;
+  font-family: 'Maven Pro', sans-serif; 
+}
 
 h3 {
-    color: #686864;
-    font-family: 'Maven Pro', sans-serif; 
+    
     padding-left: 0.4em;
     font-size: 0.7em;
   
@@ -27,8 +52,12 @@ h3 {
 .content-ul{
   list-style-type: circle;
   list-style-position: inside;
-  
 }
+
+main{
+    margin-top: 3em;  
+}
+
 
 /*Start of header Background Images*/
 
@@ -63,42 +92,23 @@ h3 {
 }
 
 
-
 /*Header*/
 
 header nav {
-    text-align: center; 
+     
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: black
 }
-
-
-
-
-header a {
-    text-decoration: none;
-    color: white;
-    
-}
-
 .not-selected-heading {
     color: grey;
 }
 
 
 
-header a:hover {
-    text-decoration: underline;
-}
-
-
-
 header li {
     display: inline; 
-    padding-right: 2em;
-    font-family: 'Maven Pro', sans-serif; 
- 
+    padding-left: 2em; /*Provide Spacing between Headings*/
 }
 
 /*Make Headings in header arrange vertically on small screens*/
@@ -107,6 +117,7 @@ header li {
     header li {
         display: inherit;
         padding-bottom: 1em;
+        padding-left: 0em;
     } 
 
     header nav {
@@ -115,10 +126,8 @@ header li {
 }
 
 header h1 {
-    text-align: center;
+    
     padding-top: 1em;
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
     font-size: 1.5em;
     background-color: black;
     padding-bottom: 1em;   
@@ -126,39 +135,21 @@ header h1 {
 }
 
 
-
-main{
-    
-    color: white;
-    line-height: 2.0em;
-    font-family: 'Proza Libre', sans-serif;
-    margin-top: 3em;
-    
-}
-
-main p{
-    text-align: center;
-}
-
-
-
 /*Footer*/
+
+footer{
+  background-color: black;
+}
 
 .footer-wrapper{
     margin-top: 200px;
-    background-color: black;
     padding: 1em 10% 1em 10%;
     border-top: 3px solid #684f1b;
 }
 
 footer h1 a{
-    font-family: 'Cinzel', serif;
-    font-weight: bold;
     font-size: 1em;
-    background-color: black;
     padding-bottom: 1em;
-    color: white;
-    text-decoration: none;   
 }
 
 footer li{
@@ -166,44 +157,48 @@ footer li{
 }
 
 footer li a{
-    color: white;
-    text-decoration: none;
-    font-family: 'Maven Pro', sans-serif; 
     font-size: 0.8em;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
+
 
 footer h2{
     padding-top: 1.5em;
-    color: #686864;
-    font-family: 'Maven Pro', sans-serif; 
     padding-left: 0.4em;
     padding-bottom: 0.5em;
-    background-color: black;
     font-size: 0.7em;
-    text-align: center;
+    
 }
 
 /*Index page details*/
 
 .index-grid-container{
-  
     display: grid; 
     grid-template-columns: repeat(10,10% ); 
     grid-template-rows: repeat(60, 50px); 
-    align-items: center;
-      
+    align-items: center; 
 }
+
+.index-grid-container a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  
+}
+
+.index-grid-items{
+  
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+
 
 .index-grid-menu:hover{
   outline: solid white;
-
   text-decoration: underline;
 }
-
 
 .index-grid-item1{
     grid-column-start: 2; 
@@ -224,19 +219,9 @@ footer h2{
   grid-column-start: 4; 
   grid-column-end: 7;
   grid-row-start: 15; 
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+ 
   
 }
-
-.index-grid-item3 a{
-  color: white;
-  text-decoration: none;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-}
-
 
 .index-grid-item4{
   grid-column-start: 6; 
@@ -250,17 +235,8 @@ footer h2{
   grid-column-start: 4; 
   grid-column-end: 7;
   grid-row-start: 25; 
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+ 
   
-}
-
-.index-grid-item5 a{
-  color: white;
-  text-decoration: none;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
 }
 
 .index-grid-item6{
@@ -274,16 +250,7 @@ footer h2{
   grid-column-start: 4; 
   grid-column-end: 7;
   grid-row-start: 36; 
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
-}
-
-.index-grid-item7 a{
-  color: white;
-  text-decoration: none;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
+ 
 }
 
 .index-grid-item8{
@@ -297,17 +264,11 @@ footer h2{
   grid-column-start: 4; 
   grid-column-end: 7;
   grid-row-start: 48; 
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 4%;
+  
+
 }
 
-.index-grid-item9 a{
-  color: white;
-  text-decoration: none;
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 20px;
-}
+
 @media only screen and (max-width: 750px) {
 
   .index-grid-container{
@@ -414,12 +375,8 @@ footer h2{
   }
 }
 
-
-
-
 .grid-heading{
   margin-bottom: 1em;
-  text-align: center;
   font-size: 1.5em;
   font-family: 'Cormorant Garamond', serif;
 }
@@ -450,17 +407,12 @@ footer h2{
     grid-column-start: 2; 
     grid-column-end: 5; 
     grid-row-start: 1; 
-  
-    
-    
   }
   .building-grid-item2 { 
     
     grid-column-start: 6; 
     grid-column-end: 10; 
     grid-row-start: 1; 
-
-  
   }
   @media (max-width: 1200px) {
 
@@ -485,11 +437,9 @@ footer h2{
       
       grid-column-start: 2;
       grid-column-end: 10;
-      
     }
 
-    .building-grid-item2 { 
-      
+    .building-grid-item2 {  
       padding-top: 5em;
       grid-row-start: 48; 
   }
@@ -503,16 +453,14 @@ footer h2{
     padding-top: 3em;
     display: grid; 
     grid-template-columns: repeat(10, 10%); 
-    grid-template-rows: repeat(67, 50px); 
-    
-}
+    grid-template-rows: repeat(67, 50px);  
+  }
 
   .boyd-grid-item1 { 
     
     grid-column-start: 2; 
     grid-column-end: 5; 
     grid-row-start: 1; 
-   
   }
 
   .boyd-grid-item1 p {
@@ -520,10 +468,7 @@ footer h2{
     padding-bottom: 5em;
   }
 
-  
-  
   .boyd-grid-item2 { 
-    
     grid-column-start: 6; 
     grid-column-end: 10; 
     grid-row-start: 1; 
@@ -537,11 +482,9 @@ footer h2{
   @media (max-width: 960px) {
 
     .boyd-grid-container {
-      grid-template-rows: repeat(65, 50px); 
+      grid-template-rows: repeat(70, 50px); 
       line-height: 1.7em;
-      font-size: 15px;
-
-      
+      font-size: 15px;    
   }
   }
 
@@ -550,33 +493,25 @@ footer h2{
     .boyd-grid-container {
       grid-template-rows: repeat(88, 50px); 
       line-height: 1.7em;
-      font-size: 15px;
-
-      
+      font-size: 15px;    
   }
-
   }
 
   @media (max-width: 500px) {
 
     .boyd-grid-container {
-      grid-template-rows: repeat(115, 50px); 
-
-
-      
+     grid-template-rows: repeat(125, 50px);   
   }
-
    .boyd-grid-container div{
      grid-column-start: 2;
      grid-column-end: 10;
    }
 
    .boyd-grid-item2{
-     grid-row-start: 56;
+     grid-row-start: 63;
    }
   }
 
-  
 
   /*History Grid*/
 
@@ -585,14 +520,13 @@ footer h2{
     display: grid; 
     grid-template-columns: repeat(10, 10%); 
     grid-template-rows: repeat(35, 50px); 
-    
     margin-left: 5%;
     margin-right: 5%;
 }
 
   .history-grid-item1 { 
     
-    grid-column-start: 1; 
+    grid-column-start: 2; 
     grid-column-end: 5; 
     grid-row-start: 1; 
   }
@@ -630,7 +564,7 @@ footer h2{
     }
 
     .history-grid-items{
-      grid-column-start: 1;
+      grid-column-start: 2;
       grid-column-end: 10; 
     }
 
