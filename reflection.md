@@ -1,6 +1,6 @@
-# Front-end Web Design 11056
-# Assignment 2 Rationale
-By U3160099
+    ##Front-end Web Design 11056
+    ##Assignment 2 Rationale
+          By U3160099
 
 My goal for the website was to have a good user experience, I believe this is more important than an overly fancy appearance. I got some of my inspiration for a good user experience from “don’t make me think”. Examples of this are the headings changing colour when hovered over to indicate they are selectable, the clear menu at the top of each page to show which page has been selected and having the title as a link back to the home page to ensure users don’t get lost. 
 
