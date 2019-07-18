@@ -14,4 +14,8 @@ I was having difficulty with the grid and making the gaps even when the website 
 
 In the end the final website looked quite like the original sketches. I was proposing to use a light colour scheme for the backgrounds, but in the end, decided to go with dark, as I thought this worked better with the warm coloured pictures.
 
+assets/images/Sketch1.png
+assets/images/Sketch2.png
+assets/images/Sketch3.png
+
 
